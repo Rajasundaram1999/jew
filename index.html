@@ -1,99 +1,310 @@
-<!-- Product Box 1 - Necklaces -->
-<div class="product-box">
-  <div class="p-img-container">
-    <div class="p-img">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1606761568499-6d2451b37b39" class="p-img-front" alt="Sree Raja Necklace Front" />
-        <img src="https://images.unsplash.com/photo-1606761568499-6d2451b37b39" class="p-img-back" alt="Sree Raja Necklace Back" />
-      </a>
-    </div>
-  </div>
-  <div class="p-box-text">
-    <div class="product-category"><span>Necklace</span></div>
-    <a href="#" class="product-title">Elegant Gold Necklaces</a>
-    <div class="price-buy">
-      <span class="p-price">₹ 45,000</span>
-      <a href="#" class="p-buy-btn">Buy Now</a>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sree Raja Jewellers - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/sreeraja-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- =================================================== Navbar =================================================-->
+    <nav class="navbar">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg"height="26"viewBox="0 -960 960 960"width="24">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </a>
+        </li>
+        <li><a href="#">All Jewellery</a></li>
+        <li><a href="#">Gold</a></li>
+        <li><a href="#">Diamond</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Wedding</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="index.html"><img src="./images/sreeraja-logo.png" alt="Sree Raja Jewellers Logo" /></a>
+        </li>
+        <li class="hideOnMobile"><a href="#">All Jewellery</a></li>
+        <li class="hideOnMobile"><a href="#">Gold</a></li>
+        <li class="hideOnMobile"><a href="#">Diamond</a></li>
+        <li class="hideOnMobile"><a href="#">Collections</a></li>
+        <li class="hideOnMobile"><a href="#">Wedding</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg"height="26"viewBox="0 -960 960 960"width="26">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-<!-- Product Box 2 - Bracelets -->
-<div class="product-box">
-  <div class="p-img-container">
-    <div class="p-img">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1606788075761-1f3e1da4fadb" class="p-img-front" alt="Sree Raja Bracelet Front" />
-        <img src="https://images.unsplash.com/photo-1606788075761-1f3e1da4fadb" class="p-img-back" alt="Sree Raja Bracelet Back" />
+    <!-- ================================================= Hero Slider ==============================================-->
+    <div class="container">
+      <a href="index.html">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/i1.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/i2.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/i3.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/i4.png" alt="" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </a>
     </div>
-  </div>
-  <div class="p-box-text">
-    <div class="product-category"><span>Bracelets</span></div>
-    <a href="#" class="product-title">Designer Bracelets</a>
-    <div class="price-buy">
-      <span class="p-price">₹ 15,800</span>
-      <a href="#" class="p-buy-btn">Buy Now</a>
-    </div>
-  </div>
-</div>
 
-<!-- Product Box 3 - Ring -->
-<div class="product-box">
-  <div class="p-img-container">
-    <div class="p-img">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1606857521019-8b70f8b812f2" class="p-img-front" alt="Sree Raja Ring Front" />
-        <img src="https://images.unsplash.com/photo-1606857521019-8b70f8b812f2" class="p-img-back" alt="Sree Raja Ring Back" />
-      </a>
-    </div>
-  </div>
-  <div class="p-box-text">
-    <div class="product-category"><span>Ring</span></div>
-    <a href="#" class="product-title">Classic Diamond Ring</a>
-    <div class="price-buy">
-      <span class="p-price">₹ 25,999</span>
-      <a href="#" class="p-buy-btn">Buy Now</a>
-    </div>
-  </div>
-</div>
+    <!-- =================================================== Slider 1 ===============================================-->
+    <section class="p-slider">
+      <div class="title_one">
+        <h3 class="headline_one">SHOP BY CATEGORY</h3>
+      </div>
+      <div class="slider-btns">
+        <button aria-label="Previous" class="glider-prev"><span></span></button>
+        <button aria-label="Next" class="glider-next"><span></span></button>
+      </div>
+      <div class="glider-contain">
+        <div class="glider">
+          
+          <!-- Product 1 - Necklace -->
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img src="https://images.unsplash.com/photo-1606761568499-6d2451b37b39" class="p-img-front" alt="Sree Raja Necklace Front" />
+                  <img src="https://images.unsplash.com/photo-1606761568499-6d2451b37b39" class="p-img-back" alt="Sree Raja Necklace Back" />
+                </a>
+              </div>
+            </div>
+            <div class="p-box-text">
+              <div class="product-category"><span>Necklace</span></div>
+              <a href="#" class="product-title">Elegant Gold Necklaces</a>
+              <div class="price-buy">
+                <span class="p-price">₹ 45,000</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
 
-<!-- Product Box 4 - Gemstone Ring -->
-<div class="product-box">
-  <div class="p-img-container">
-    <div class="p-img">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1606761620417-b26e9b66e02f" class="p-img-front" alt="Sree Raja Gemstone Ring Front" />
-        <img src="https://images.unsplash.com/photo-1606761620417-b26e9b66e02f" class="p-img-back" alt="Sree Raja Gemstone Ring Back" />
-      </a>
-    </div>
-  </div>
-  <div class="p-box-text">
-    <div class="product-category"><span>Gemstone Ring</span></div>
-    <a href="#" class="product-title">Royal Gemstone Ring</a>
-    <div class="price-buy">
-      <span class="p-price">₹ 38,200</span>
-      <a href="#" class="p-buy-btn">Buy Now</a>
-    </div>
-  </div>
-</div>
+          <!-- Product 2 - Bracelets -->
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img src="https://images.unsplash.com/photo-1606788075761-1f3e1da4fadb" class="p-img-front" alt="Sree Raja Bracelet Front" />
+                  <img src="https://images.unsplash.com/photo-1606788075761-1f3e1da4fadb" class="p-img-back" alt="Sree Raja Bracelet Back" />
+                </a>
+              </div>
+            </div>
+            <div class="p-box-text">
+              <div class="product-category"><span>Bracelets</span></div>
+              <a href="#" class="product-title">Designer Bracelets</a>
+              <div class="price-buy">
+                <span class="p-price">₹ 15,800</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
 
-<!-- Product Box 5 - Pendant -->
-<div class="product-box">
-  <div class="p-img-container">
-    <div class="p-img">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1606761561202-cb20da02f9a4" class="p-img-front" alt="Sree Raja Pendant Front" />
-        <img src="https://images.unsplash.com/photo-1606761561202-cb20da02f9a4" class="p-img-back" alt="Sree Raja Pendant Back" />
+          <!-- Product 3 - Ring -->
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img src="https://images.unsplash.com/photo-1606857521019-8b70f8b812f2" class="p-img-front" alt="Sree Raja Ring Front" />
+                  <img src="https://images.unsplash.com/photo-1606857521019-8b70f8b812f2" class="p-img-back" alt="Sree Raja Ring Back" />
+                </a>
+              </div>
+            </div>
+            <div class="p-box-text">
+              <div class="product-category"><span>Ring</span></div>
+              <a href="#" class="product-title">Classic Diamond Ring</a>
+              <div class="price-buy">
+                <span class="p-price">₹ 25,999</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 - Gemstone Ring -->
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img src="https://images.unsplash.com/photo-1606761620417-b26e9b66e02f" class="p-img-front" alt="Sree Raja Gemstone Ring Front" />
+                  <img src="https://images.unsplash.com/photo-1606761620417-b26e9b66e02f" class="p-img-back" alt="Sree Raja Gemstone Ring Back" />
+                </a>
+              </div>
+            </div>
+            <div class="p-box-text">
+              <div class="product-category"><span>Gemstone Ring</span></div>
+              <a href="#" class="product-title">Royal Gemstone Ring</a>
+              <div class="price-buy">
+                <span class="p-price">₹ 38,200</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 - Pendant -->
+          <div class="product-box">
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img src="https://images.unsplash.com/photo-1606761561202-cb20da02f9a4" class="p-img-front" alt="Sree Raja Pendant Front" />
+                  <img src="https://images.unsplash.com/photo-1606761561202-cb20da02f9a4" class="p-img-back" alt="Sree Raja Pendant Back" />
+                </a>
+              </div>
+            </div>
+            <div class="p-box-text">
+              <div class="product-category"><span>Pendant</span></div>
+              <a href="#" class="product-title">Graceful Pendant</a>
+              <div class="price-buy">
+                <span class="p-price">₹ 12,499</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================== Grid Section ==========================================-->
+    <div class="title_one">
+      <h3 class="headline_one">Timeless Treasures</h3>
+    </div>
+    <div class="grid">
+      <div class="column">
+        <img src="./images/g1.jpg" />
+      </div>
+      <div class="column">
+        <img src="./images/g2.webp" />
+        <img src="./images/g3.jpg" />
+      </div>
+    </div>
+
+    <!-- ==================================================== Poster-6 ==============================================-->
+    <div class="title_one">
+      <h3 class="headline_one">Gemstone Gallery</h3>
+    </div>
+    <div class="container-gallery">
+      <div class="gallery">
+        <a href="https://images.unsplash.com/photo-1606761568499-6d2451b37b39" data-lightbox="models" data-title="Sree Raja Necklace">
+          <img src="https://images.unsplash.com/photo-1606761568499-6d2451b37b39" alt="Sree Raja Necklace" />
+        </a>
+        <a href="https://images.unsplash.com/photo-1606788075761-1f3e1da4fadb" data-lightbox="models" data-title="Sree Raja Bracelet">
+          <img src="https://images.unsplash.com/photo-1606788075761-1f3e1da4fadb" alt="Sree Raja Bracelet" />
+        </a>
+        <a href="https://images.unsplash.com/photo-1606857521019-8b70f8b812f2" data-lightbox="models" data-title="Sree Raja Ring">
+          <img src="https://images.unsplash.com/photo-1606857521019-8b70f8b812f2" alt="Sree Raja Ring" />
+        </a>
+        <a href="https://images.unsplash.com/photo-1606761620417-b26e9b66e02f" data-lightbox="models" data-title="Sree Raja Gemstone Ring">
+          <img src="https://images.unsplash.com/photo-1606761620417-b26e9b66e02f" alt="Sree Raja Gemstone Ring" />
+        </a>
+        <a href="https://images.unsplash.com/photo-1606761561202-cb20da02f9a4" data-lightbox="models" data-title="Sree Raja Pendant">
+          <img src="https://images.unsplash.com/photo-1606761561202-cb20da02f9a4" alt="Sree Raja Pendant" />
+        </a>
+      </div>
+    </div>
+
+    <!-- ===================================================== Video ================================================-->
+    <div class="title_one">
+      <h3 class="headline_one">Glamour in Motion</h3>
+    </div>
+    <div class="video">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="./images/sreeraja-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- ===================================================== Footer ===============================================-->
+    <footer>
+      <div class="container">
+        <div class="sec">
+          <h2>About Us</h2>
+          <p>
+            Welcome to <b>Sree Raja Jewellers</b>, where tradition meets elegance. 
+            For years, we have been crafting timeless jewellery that blends heritage 
+            with modern design. Our collection reflects trust, artistry, and unmatched 
+            craftsmanship to celebrate your precious moments.
+          </p>
+          <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="sec quicklinks">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="sec quicklinks">
+          <h2>Shop</h2>
+          <ul>
+            <li><a href="#">DIAMOND</a></li>
+            <li><a href="#">GOLD JEWELLERY</a></li>
+            <li><a href="#">PLATINUM</a></li>
+            <li><a href="#">GEMSTONES</a></li>
+          </ul>
+        </div>
+
+        <div class="sec contact">
+          <h2>Contact Us</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p><a href="mailto:info@sreerajajewellers.com">info@sreerajajewellers.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-2">
+        <h3>NEWS LETTER</h3>
+        <form>
+          <input type="email" placeholder="Enter Your Email Address" required />
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </footer>
+
+    <div class="copyrightText">
+      <p>Copyright 2025 Sree Raja Jewellers. All Rights Reserved.</p>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919876543210">
+        <img src="./images/whatsapp.webp" alt="Chat with Sree Raja Jewellers" />
       </a>
     </div>
-  </div>
-  <div class="p-box-text">
-    <div class="product-category"><span>Pendant</span></div>
-    <a href="#" class="product-title">Graceful Pendant</a>
-    <div class="price-buy">
-      <span class="p-price">₹ 12,499</span>
-      <a href="#" class="p-buy-btn">Buy Now</a>
-    </div>
-  </div>
-</div>
+
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
